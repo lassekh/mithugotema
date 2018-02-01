@@ -5,3 +5,7 @@ draft: true
 ---
 
 Forside
+
+[Github](http://github.com)
+
+<button>Klik</button>
