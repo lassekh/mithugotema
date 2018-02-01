@@ -1,0 +1,17 @@
+$white-color: #fff;
+$black-color: #000;
+$theme-color: cadetblue;
+body {
+    background-color: $theme-color;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+    background-color: $white-color;
+}
+
+h1 {
+    font-size: 72px;
+    color: $black-color;
+}
