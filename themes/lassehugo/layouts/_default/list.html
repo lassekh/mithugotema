@@ -1,0 +1,15 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>{{ .Title }}</h1>
+    <section>{{ .Content }}</section>
+    {{ range .Pages }}
+    <h3>{{ .Title }}</h3>
+    <div>{{ .Content }}</div> {{ end }}
+
+</body>
+
+</html>
