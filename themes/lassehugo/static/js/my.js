@@ -8,7 +8,7 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-/* Form
+/* Form */
 
 $("#kontaktmig").submit(function (event) {
     event.preventDefault();
@@ -44,4 +44,3 @@ function formFailure(text) {
     $("#formfailure").removeClass("hidden");
     $("#formfailure").html(text);
 }
-*/
