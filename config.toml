@@ -10,3 +10,17 @@ theme = "lassehugo"
     weight = -110
     identifier = "hjem"
     url = "/"
+    
+[[menu.main]]
+    name = "Kontakt"
+    title = "Kontakt"
+    weight = -100
+    identifier = "kontakt"
+    url = "/kontakt/"
+    
+[[menu.main]]
+    name = "Om"
+    title = "Om"
+    weight = -90
+    identifier = "om"
+    url = "/om/"

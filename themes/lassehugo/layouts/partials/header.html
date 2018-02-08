@@ -2,27 +2,28 @@
 
 <head>
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/flexboxgrid.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css">
 </head>
 
 <body>
     <header>
-    <!-- The overlay -->
-    <nav id="myNav" class="overlay">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <!-- Overlay content -->
-        <div class="overlay-content">
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-    {{ end }}
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                {{ $currentPage := . }} {{ range .Site.Menus.main }}
+                <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a> {{ end }}
+            </div>
+
         </div>
 
-    </nav>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">open</span>
 
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()">open</span>
-</header>
+
+    </header>

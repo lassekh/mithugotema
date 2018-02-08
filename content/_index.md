@@ -6,6 +6,7 @@ draft: true
 
 Forside
 
-[Github](http://github.com)
+Et kraftfuldt design system implementeret i det top moderne HUGO tema "lassehugo"
 
-<button>Klik</button>
+Design systemet gør brug af allerede eksisterende designs som [Flexbox Grid](http://github.com) og ...
+

@@ -31,6 +31,61 @@ a {
     color: $theme-color;
 }
 
+/*-- Form --*/
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#formfailure {
+    background-color: red;
+    padding: 1em;
+}
+
+
+/*-- Grid --*/
+
+/* The Overlay (background) */
+
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
@@ -51,7 +106,6 @@ a {
     /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-
 /* Position the content inside the overlay */
 
 .overlay-content {
@@ -66,7 +120,6 @@ a {
     /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-
 /* The navigation links inside the overlay */
 
 .overlay a {
@@ -80,14 +133,12 @@ a {
     /* Transition effects on hover (color) */
 }
 
-
 /* When you mouse over the navigation links, change their color */
 
 .overlay a:hover,
 .overlay a:focus {
     color: #f1f1f1;
 }
-
 
 /* Position the close button (top right corner) */
 
@@ -97,7 +148,6 @@ a {
     right: 45px;
     font-size: 60px;
 }
-
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 

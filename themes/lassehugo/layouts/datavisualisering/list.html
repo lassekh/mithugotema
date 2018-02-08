@@ -1,0 +1,6 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+<section>{{ .Content }}</section>
+{{ partial "datavisualisering.html" . }} {{ range .Pages }}
+<h3>{{ .Title }}</h3>
+<div>{{ .Content }}</div> {{ end }} {{ partial "footer.html" . }}
